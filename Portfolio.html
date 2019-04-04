@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ferghall McGuire - Data analyst</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="the_goods/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="the_goods/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="the_goods/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="the_goods.css" rel="stylesheet" type="text/css">
+    <link href="the_goods/css.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="bootstrap-overrides" class="index">
+
+
+<style>
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+</style>
+
+
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">datum</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="the_goods/profile_sr.png" alt="" width="250" height="250">
+                    <div class="intro-text">
+                        <h1 class="name">Ferghall McGuire</h1>
+                        <hr>
+                        <span class="skills">Data Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="style1">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4 portfolio-item">
+                  <a href="the_goods/CNN_Model.html" class="portfolio-link">
+
+                    <!-- class="portfolio-link" is what allows the stacking / mouse over interaction -->
+                    <!-- data-toggle="modal" currently broken -->
+
+                        <div class="caption text-center vertical-center-row">
+
+                            <div class="caption-content img-centered vertical-center-row">
+                                	<h4>CNN classifier for botanical species</h4>
+                                	<hr>
+                                	<p>Classifying imagery of plant species a CNN for identification.</p>
+                            </div>
+                        </div>
+                        <!-- image of leaf that has been altered-->
+                        <img src="the_goods/hcm.jpeg" class="img-responsive" alt="image-alt">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="the_goods/Correlation.html" class="portfolio-link">
+                    <!-- class="portfolio-link" is what allows the stacking / mouse over interaction -->
+                    <!-- data-toggle="modal" currently broken -->
+
+                        <div class="caption">
+                            <div class="caption-content">
+                                	<h4>Financial correlation</h4>
+                                	<hr>
+                                	<p>Market correlation between US, HK and metal stocks</p>
+                            </div>
+                        </div>
+                        <img src="the_goods/stock_amsterdam.jpeg" class="img-responsive" alt="image-alt">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                      <a href="the_goods/From_gmail_to_df.html" class="portfolio-link">
+                    <!-- class="portfolio-link" is what allows the stacking / mouse over interaction -->
+                    <!-- data-toggle="modal" currently broken -->
+
+                        <div class="caption">
+                            <div class="caption-content">
+                                	<h4>Email data extractor</h4>
+                                	<hr>
+                                	<p>Extracting, cleaning and loading data from gmail into a pandas dataframe.</p>
+                            </div>
+                        </div>
+                        <img src="the_goods/lucas.png" class="img-responsive" alt="image-alt">>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="the_goods/MandleBrot.html" class="portfolio-link">
+                    <!-- class="portfolio-link" is what allows the stacking / mouse over interaction -->
+                    <!-- data-toggle="modal" currently broken -->
+
+                        <div class="caption">
+                            <div class="caption-content">
+                                	<h4>computational geometry (in_progress)</h4>
+                                	<hr>
+                                	<p>Generating a mandlebrot and comparing its zooming power to a real world example</p>
+                            </div>
+                        </div>
+                        <img src="the_goods/Mandlebrot.png" class="img-responsive" alt="image-alt">>
+                    </a>
+                </div>
+
+
+                <div class="col-sm-4 portfolio-item">
+                  <a href="the_goods/NGS.html" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                	<h4>Next Generation Sequencing (in progress)</h4>
+                                	<hr>
+                                	<p>A rudimentary survey of portion of a selected genome</p>
+                            </div>
+                        </div>
+                        <img src="the_goods/genome.jpeg" class="img-responsive" alt="Lightbulb" title="Doctoral Research" width="900" height="650">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="the_goods/Texting.png" class="img-responsive" alt="Coming soon" width="900" height="650">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>An inspiring informatician, I have had the great experience of getting my hands into numerous different technologies, while studying a graduate degree in data-analytics, such as using the openstack environment, hadoop, NoSQL (MongoDB, redis).
+                      Through all of these, I pilot them via linux bash commands and python. </p>
+                  </div>
+
+                <div class="col-lg-4">
+                  <div>
+                  <p>If I can say so myself, I am quite a diligent and goal-geared individual, whom keeps track of the goals and stays focused.</p>
+                  </div>
+                    <p>
+                      Apart from my career aspirations, I have a bounty of past-times that no amount of time will cover. From electronics to botany, and languages to outdoor pursuits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Hong Kong
+                            <br></p>
+                    </div>
+                    <section id="contact">
+                    <div class="footer-col col-md-4">
+                        <h3>A means to chat</h3>
+                        <ul class="list-inline">
+                            <li>
+
+                                <a href="https://www.linkedin.com/in/ferghall-mcguire-data/" class="btn-social btn-outline" target="_blank"><i class="fab fa-microsoft"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:amcnajar@gmail.com" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                  </section>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © Ferghall McGuire 2019
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="the_goods/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="the_goods/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="the_goods/jquery_002.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="the_goods/jqBootstrapValidation.js"></script>
+    <script src="the_goods/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="the_goods/freelancer.js"></script>
+
+
+
+
+</body></html>
