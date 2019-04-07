@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11776,6 +11776,13 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Correlation">Correlation<a class="anchor-link" href="#Correlation">&#182;</a></h1><h4 id="I-wish-to-see-what-is-the-correlation-between-the-S&amp;P-500,-Hang-Seng-index-and-the-a-few-companies-that-will-be-used-to-represent-(precious)-metal-stocks.">I wish to see what is the correlation between the S&amp;P 500, Hang Seng index and the a few companies that will be used to represent (precious) metal stocks.<a class="anchor-link" href="#I-wish-to-see-what-is-the-correlation-between-the-S&amp;P-500,-Hang-Seng-index-and-the-a-few-companies-that-will-be-used-to-represent-(precious)-metal-stocks.">&#182;</a></h4><p>The aim of this is to skimly assess the reduction of risk with investing in these indices.</p>
+<p>Investing into companies can be very daunting. Yet, even if we are quite knowledgable about a certain company, they are still affected by their local macro-environment.The ideal scenario is to invest in companies with close to 0 correlation comparatively than closer to the -1 > x < 1 ends of the spectrum. Unforunately, very rarely do we find companies in the same locality to have a value close to zero, though they do exist. So rather than, search within the same fish bowl, let us look across the Pacific Ocean with the two markets from the US and Hong Kong.
+We will also look at the metal stock to see can that help us allivate risk.</p>
+<br></br>
+<p1> A brief outline of the steps consist of:
+1) Collecting data form online sources such as Yahoo financial data.
+2) Format the data into Pandas DataFrames.
+3) Conduct some initial analysis.</p1>
 
 </div>
 </div>
@@ -12197,7 +12204,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;metal_df.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">metal_df</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-    
+
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;metal_df.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">metal_df</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
@@ -13443,7 +13450,7 @@ KKEAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>multiple the columns of metal and Hang Seng by 10 to allow 
+<p>multiple the columns of metal and Hang Seng by 10 to allow
 the viewing to be done on a single graph.
 This will not interfer with the percentage change, and therefore will not affect the correlation.</p>
 
@@ -14714,7 +14721,7 @@ gg==
 <div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">corr_graph</span><span class="p">(</span><span class="n">data</span><span class="p">):</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">corr_graph</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="n">data1</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span>
     <span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
     <span class="n">ax1</span> <span class="o">=</span> <span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
@@ -15569,15 +15576,15 @@ MMaYesoSgDHG1FOWAIwxpp76f1uX0MgdCRQ5AAAAAElFTkSuQmCC
 
 
 <span class="n">gs</span><span class="o">=</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
- 
+
 <span class="n">subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;Hong Kong Bust, 1996&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tri_df_crash</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span>
-    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>          
-    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>      
-    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>      
-    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>         
+    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>
+    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
@@ -15586,10 +15593,10 @@ MMaYesoSgDHG1FOWAIwxpp76f1uX0MgdCRQ5AAAAAElFTkSuQmCC
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;2005 - 2008 boom&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tri_df_2007_boom</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span>
-    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>          
-    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>      
-    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>      
-    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>         
+    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>
+    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
@@ -15598,10 +15605,10 @@ MMaYesoSgDHG1FOWAIwxpp76f1uX0MgdCRQ5AAAAAElFTkSuQmCC
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;international bust of 2008&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tri_df_2008_crash</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span>
-    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>          
-    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>      
-    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>      
-    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>         
+    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>
+    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
@@ -15610,10 +15617,10 @@ MMaYesoSgDHG1FOWAIwxpp76f1uX0MgdCRQ5AAAAAElFTkSuQmCC
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;Current rising tide from 2011 till present&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tri_df_present_boom</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span>
-    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>          
-    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>      
-    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>      
-    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>         
+    <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+    <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span>
+    <span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
@@ -15622,10 +15629,10 @@ MMaYesoSgDHG1FOWAIwxpp76f1uX0MgdCRQ5AAAAAElFTkSuQmCC
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;From 1987 to 2019&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">tri_df_adj</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>     <span class="c1"># The line objects</span>
-           <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;SP500&#39;</span><span class="p">,</span> <span class="s1">&#39;Hang Seng&#39;</span><span class="p">,</span> <span class="s1">&#39;Metal&#39;</span><span class="p">],</span> 
-           <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">,</span>   
-           <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>   
-           <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Legend&quot;</span><span class="p">,</span>  
+           <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;SP500&#39;</span><span class="p">,</span> <span class="s1">&#39;Hang Seng&#39;</span><span class="p">,</span> <span class="s1">&#39;Metal&#39;</span><span class="p">],</span>
+           <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">,</span>
+           <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+           <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Legend&quot;</span><span class="p">,</span>
            <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">13</span><span class="p">})</span>
 
 
@@ -19037,6 +19044,11 @@ MY+IiGZJDSkiIvpCElJERPSFJKSIiOgLSUgREdEXkpAiIqIvJCFFRERfSEKKiIi+8P8BFSoklmo+
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It seems that the value of metal as an investment is a bad investment with this ~ 30 year span data.</p>
 <p>As for the correlation of SP500 and the Hang Seng are both highly correlated bar the localised Hong Kong crash of 1997.</p>
+<br></br>
+<p>As we can see that for the most part the Hong Kong and the US stocks are correlated. This should come to no surprised as the Hong Kong dollar is based off the US dollar, so even if businesses are conducting work in varying fields, the finanical bread and butter is based from Uncle Sam's churning methods.
+Yet, with the opening of the Chinese mainland stock onto the Hong Kong stock exchange we can expect that there could be a divergence in the correlation. Though, as we have seen from the recent trade wars, the US economy and the Sino Economy are still heavily dependent on one another.</p>
+<br></br>
+<br></br>
 
 </div>
 </div>
@@ -19045,7 +19057,7 @@ MY+IiGZJDSkiIvpCElJERPSFJKSIiOgLSUgREdEXkpAiIqIvJCFFRERfSEKKiIi+8P8BFSoklmo+
   </div>
 </body>
 
- 
+
 
 
 </html>
